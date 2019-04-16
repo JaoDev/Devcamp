@@ -16,13 +16,13 @@
     dapibus at magnis venenatis euismod cursus,
     himenaeos fames mus scelerisque gravida ornare dis."
   )
-  
+
 end
 
 puts "10 bogs create"
 
 5.times do |skill|
-  skill.create!(
+  Skill.create!(
     title: "Rails #{skill}",
     percent_utilized: 15
   )
@@ -30,9 +30,9 @@ end
 
 puts "5 skill create"
 
-9.times do |portfofolio_item|
-  portfofolio.create!(
-    title: "Porfolio tile #{portfofolio_item}",
+9.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Porfolio tile #{portfolio_item}",
     subtitle: "My great service",
     body: "onubia morbi netus mattis nullam primis est.
     Primis purus non vel class id tortor sed penatibus, tellus habitasse
@@ -42,4 +42,4 @@ puts "5 skill create"
   )
 end
 
-puts "9 portfofolio items created"
+puts "9 portfolio items created"
