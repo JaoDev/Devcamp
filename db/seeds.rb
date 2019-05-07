@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+  )
+end
+puts "3 Topics created"
 
 10.times do |blog|
   Blog.create!(
@@ -14,7 +20,8 @@
     conubia morbi netus mattis nullam primis est.
     Primis purus non vel class id tortor sed penatibus, tellus habitasse
     dapibus at magnis venenatis euismod cursus,
-    himenaeos fames mus scelerisque gravida ornare dis."
+    himenaeos fames mus scelerisque gravida ornare dis.",
+    topic_id: Topic.last.id
   )
 
 end
@@ -30,10 +37,21 @@ end
 
 puts "5 skill create"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!(
     title: "Porfolio tile #{portfolio_item}",
-    subtitle: "My great service",
+    subtitle: "Ruby on Rails",
+    body: "onubia morbi netus mattis nullam primis est.
+    Primis purus non vel class id tortor sed penatibus, tellus habitasse
+    dapibus at magnis venenatis euismod cursus,",
+    main_image: "https://via.placeholder.com/700x500.png?",
+    thumb_image: "https://via.placeholder.com/350x200.png?"
+  )
+end
+1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Porfolio tile #{portfolio_item}",
+    subtitle: "Python",
     body: "onubia morbi netus mattis nullam primis est.
     Primis purus non vel class id tortor sed penatibus, tellus habitasse
     dapibus at magnis venenatis euismod cursus,",

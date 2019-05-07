@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def python
+    @python_portfolio_items = Portfolio.python
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
@@ -47,7 +51,7 @@ class PortfoliosController < ApplicationController
 
     #destroy and delete the Record
     @portfolio_item.destroy
-    #redirect 
+    #redirect
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
       format.json { head :no_content }
