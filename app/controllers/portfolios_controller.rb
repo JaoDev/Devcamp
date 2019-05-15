@@ -59,4 +59,10 @@ class PortfoliosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+  end
 end
