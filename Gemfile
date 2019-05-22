@@ -62,4 +62,4 @@ gem 'devise', '~> 4.6'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
-gem 'bogboni_view_tool', git: 'https://github.com/JaoDev/bogboni_view_tool'
+gem 'bogboni_view_tool', '~> 0.1.0'
