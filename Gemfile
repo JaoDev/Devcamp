@@ -63,3 +63,4 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 gem 'bogboni_view_tool', '~> 0.1.0'
+gem 'petergate', '~> 2.0'
