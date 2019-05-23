@@ -14,25 +14,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="text-center">
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
           <%= render "share/app_nav" %>
 
-          <%= login_helper %>
-
           <%= yield %>
 
-          <%= copyright_generator %>
+          <%= render "share/app_footer" %>
 
           <%= source_helper("application") %>
-
-        </div>
-      </div>
     </div>
-
   </body>
 </html>
