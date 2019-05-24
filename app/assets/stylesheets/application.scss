@@ -115,5 +115,20 @@ body {
   text-align: center;
 }
 .auth-link a {
-  color: black;
+  color: #2E9AFE;
+}
+.row > .card {
+  width: 30rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px
+}
+.register-text {
+  text-align: center;
+}
+.login > .card{
+  width: 30rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px
 }
