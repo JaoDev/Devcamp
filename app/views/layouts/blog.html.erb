@@ -16,12 +16,23 @@
 
   <body>
 
-
     <%= render "share/blog_nav"%>
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">My Blog</h1>
+        <p class="lead blog-descriptio">An example blog template build with boostrap</p>
+        <%= link_to "Write a New Blog", new_blog_path if logged_in?(:site_admin) %>
+      </div>
+    </div>
 
-    <%= login_helper %>
+    <div class="container">
+      <div class="row">
 
-    <%= yield %>
+        <%= yield %>
+        <%= render "share/blog_sidebar"%>
+
+      </div>
+    </div>
 
     <%= source_helper("blog") %>
   </body>
