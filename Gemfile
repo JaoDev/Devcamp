@@ -64,3 +64,7 @@ gem 'jquery-rails'
 
 gem 'bogboni_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0'
+#install awesome for icons socials
+gem "font-awesome-rails"
+#gem for pagination articles
+gem 'kaminari', '~> 1.1'
