@@ -44,7 +44,7 @@ puts "5 skill create"
     body: "onubia morbi netus mattis nullam primis est.
     Primis purus non vel class id tortor sed penatibus, tellus habitasse
     dapibus at magnis venenatis euismod cursus,",
-    main_image: "https://via.placeholder.com/700x500.png?",
+    main_image: "https://via.placeholder.com/600x400.png?",
     thumb_image: "https://via.placeholder.com/350x200.png?"
   )
 end
@@ -55,7 +55,7 @@ end
     body: "onubia morbi netus mattis nullam primis est.
     Primis purus non vel class id tortor sed penatibus, tellus habitasse
     dapibus at magnis venenatis euismod cursus,",
-    main_image: "https://via.placeholder.com/700x500.png?",
+    main_image: "https://via.placeholder.com/600x400.png?",
     thumb_image: "https://via.placeholder.com/350x200.png?"
   )
 end
