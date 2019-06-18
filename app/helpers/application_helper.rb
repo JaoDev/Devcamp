@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    BogboniViewTool::Renderer.copyright 'BogBoni Inc -', ' All rights reserved.'
+    BogboniViewTool::Renderer.copyright 'TripTasker Inc -', ' All rights reserved.'
   end
 
   def nav_items

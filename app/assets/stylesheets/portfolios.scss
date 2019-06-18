@@ -9,12 +9,13 @@ body {
 
 .navbar {
   margin-bottom: 0;
-  background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+  // background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+  background-color: #0A5E6C;
 }
 .navbar-toggler{
     width: 47px;
     height: 34px;
-    background-color: #26A69A;
+    background-color: #0A5E6C;
     border:none;
 }
 .navbar-toggler .line{
@@ -80,5 +81,6 @@ footer p {
   padding-top: 30px;
 }
 .navbar-brand {
-  color: #000;
+  color: #FFB74D;
+  font-size: 34;
 }
